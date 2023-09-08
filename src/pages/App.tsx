@@ -67,8 +67,7 @@ const App: FC = () => {
             className="container__listFilters"
             onClick={e => {
               handleSelectFilter(e);
-            }}
-          >
+            }}>
             <button className="container__filterButton container__filterButton_active" data-testid="display-all">
               All
             </button>
