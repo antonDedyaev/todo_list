@@ -1,14 +1,14 @@
 start:
-	npm i && npm run start
+	npm run start
 
 build:
 	npm run build
 
-start:
-	npm run start
-
 lint:
 	npm run lint
+
+format:
+	npm run prettier-format
 
 test:
 	npm run test

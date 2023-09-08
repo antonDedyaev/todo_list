@@ -17,9 +17,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prestart": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix --no-error-on-unmatched-pattern .",

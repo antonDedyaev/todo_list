@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is based on React.
+This is a classic todo list, where you can add new todos and cross the completed ones out. Use buttons at the bottom to switch between active and completed todos or show them all.
+The data is cached via localStorage, so your notes won't be erased, when you close current browser session. 
 
-## Available Scripts
+### Install and start in dev mode
 
-In the project directory, you can run:
+```
+make start
+```
 
-### `npm start`
+### Build for production
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+make build
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Lint
 
-### `npm test`
+```
+make lint
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run tests
 
-### `npm run build`
+```
+make test
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Stack:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Typescript
+- React
+- Sass
+- RTL / Jest
+- Eslint
+- Prettier
+- GH Pages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+Приложение написано на React.
+Это классический список дел, где можно добавлять новые дела и вычеркивать уже завершенные дела. Используйте кнопки внизу окна для переключения между активными и завершенными делами или для отображения всех дел.
+Данные кэшируются через localStorage, поэтому они не удалятся при завершении сессии в браузере.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Установка и локальный запуск
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+make install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Сборка для продакшена
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+make build
+```
 
-## Learn More
+### Запуск линтера
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+make lint
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Запуск тестов
+
+```
+make test
+```
+### Используемый стек:
+
+- Typescript
+- React
+- Sass
+- RTL / Jest
+- Eslint
+- Prettier
+- GH Pages
