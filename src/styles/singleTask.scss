@@ -1,0 +1,62 @@
+.taskContainer {
+  display: flex;
+
+  border-bottom: 1px solid $text-muted;
+  background: $background-list;
+
+  &__content {
+    display: flex;
+    gap: 12px;
+    padding: 18px 0 16px 15px;
+
+    input {
+      opacity: 0;
+    }
+
+    label {
+      position: relative;
+      padding-left: 20px;
+
+      font-size: 20px;
+      line-height: 130%;
+      color: $text-main;
+    }
+
+    label::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: -2px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $text-muted;
+      border-radius: 50%;
+    }
+
+    label::after {
+      content: '';
+      position: absolute;
+      left: -18px;
+      top: 3px;
+      width: 8px;
+      height: 17px;
+      border: solid $text-subtle;
+      border-width: 0 2px 2px 0;
+    }
+
+    input:not(:checked) + label::after {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    input:checked + label::after {
+      transform: rotate(40deg) scale(1);
+      opacity: 1;
+    }
+
+    input:checked + label {
+      text-decoration: line-through;
+      color: $text-muted;
+    }
+  }
+}

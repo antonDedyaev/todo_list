@@ -1,0 +1,211 @@
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    position: relative;
+    width: 40%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 15px 25px;
+
+    background: $background-main;
+    z-index: 4;
+
+    // &::before {
+    // 	content: "";
+    // 	position: absolute;
+    // 	bottom: 2.5%;
+    // 	left: 3%;
+    // 	width: 94%;
+    // 	height: 10%;
+    // 	background: $background-list;
+    // 	z-index: 5;
+    // }
+
+    // &::after {
+    // 	content: "";
+    // 	position: absolute;
+    // 	bottom: 1%;
+    // 	left: 3%;
+    // 	width: 94%;
+    // 	height: 10%;
+    // 	background: $background-list;
+    // 	z-index: 4;
+    // }
+  }
+
+  &__contentHeader {
+    height: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+
+    h1 {
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 80px;
+      line-height: 100%;
+      font-weight: 100;
+      color: $text-header;
+    }
+  }
+
+  &__contentBody {
+    width: 100%;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  &__inputLine {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 42%;
+      left: 4%;
+      content: '';
+      background-image: url('../../public/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 12px;
+      height: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 22px 0 18px 58px;
+      border-bottom: 1px solid $text-muted;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 20px;
+      line-height: 150%;
+      font-style: italic;
+      font-weight: 200;
+      background: $background-list;
+
+      color: $text-main;
+      caret-color: $text-header;
+
+      &::-webkit-input-placeholder {
+        color: $text-header;
+      }
+
+      &::-moz-placeholder {
+        color: $text-header;
+      }
+
+      &:-ms-input-placeholder {
+        color: $text-header;
+      }
+
+      &::-ms-input-placeholder {
+        color: $text-header;
+      }
+
+      &::placeholder {
+        font-size: 20px;
+
+        color: $text-header;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__contentFooter {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: $background-list;
+
+    border-bottom: 1px solid $text-muted;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+
+    color: $text-subtle;
+
+    z-index: 4;
+
+    button {
+      background: none;
+      color: $text-subtle;
+    }
+  }
+
+  &__listFilters {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__filterButton {
+    padding: 5px 8px;
+
+    &_active {
+      border: 1.2px solid $text-subtle;
+      border-radius: 3px;
+    }
+  }
+
+  &__backPage {
+    position: absolute;
+
+    height: 20px;
+    background: $background-list;
+    border-bottom: 1px solid $text-muted;
+    box-shadow: 0px 0.5px 8px 0px rgba(0, 0, 0, 0.2);
+
+    &_first {
+      bottom: 18px;
+      left: 2.8%;
+      width: 94.5%;
+      z-index: 2;
+    }
+
+    &_second {
+      bottom: 12px;
+      left: 3.5%;
+      width: 93%;
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1715px) {
+  .container {
+    &__backPage {
+      &_first {
+        width: 92%;
+        left: 4%;
+      }
+
+      &_second {
+        width: 90%;
+        left: 5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .container {
+    &__backPage {
+      &_first {
+        width: 90%;
+        left: 5%;
+      }
+
+      &_second {
+        width: 88%;
+        left: 6%;
+      }
+    }
+  }
+}
