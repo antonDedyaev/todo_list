@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SNAPSHOT TESTS main page should not change 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container__content"
+    >
+      <header
+        class="container__contentHeader"
+      >
+        <h1>
+          todos
+        </h1>
+      </header>
+      <section
+        class="container__contentBody"
+      >
+        <div
+          class="container__inputLine"
+        >
+          <input
+            data-testid="main-input"
+            placeholder="What needs to be done?"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="container__list"
+        >
+          <div />
+        </div>
+      </section>
+      <footer
+        class="container__contentFooter"
+      >
+        <span>
+          0 items left
+        </span>
+        <div
+          class="container__listFilters"
+        >
+          <button
+            class="container__filterButton container__filterButton_active"
+            data-testid="display-all"
+          >
+            All
+          </button>
+          <button
+            class="container__filterButton"
+            data-testid="active-todos"
+          >
+            Active
+          </button>
+          <button
+            class="container__filterButton"
+          >
+            Completed
+          </button>
+        </div>
+        <button
+          data-testid="clear-all"
+        >
+          Clear completed
+        </button>
+      </footer>
+      <div
+        class="container__backPage container__backPage_first"
+      />
+      <div
+        class="container__backPage container__backPage_second"
+      />
+    </div>
+  </div>
+</div>
+`;
