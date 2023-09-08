@@ -23,7 +23,7 @@
     "deploy": "gh-pages -d build",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix --no-error-on-unmatched-pattern .",
-    "prettier": "prettier --write .",
+    "prettier-format": "prettier --config .prettierrc.js --write .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
